@@ -2,8 +2,8 @@
 void curtain() {
   if (curtainValue)
   {
-    for(int i=0; i<=openCloseValue; i++) { Motor(motorPin1, motorPin2, motorPin3, motorPin4, 0); } 
-  } else { for(int i=0; i<=openCloseValue; i++) { Motor(motorPin4, motorPin3, motorPin2, motorPin1, 0); }}
+    for(int i=0; i<=512; i++) { Motor(motorPin1, motorPin2, motorPin3, motorPin4, 0); } 
+  } else { for(int i=0; i<=512; i++) { Motor(motorPin4, motorPin3, motorPin2, motorPin1, 0); }}
   delay(1000);
   curtainValue = !curtainValue;
 }
