@@ -6,4 +6,6 @@ void ligth() {
   } else {
     digitalWrite(relay1, LOW);
   }
+  displayStat();
+  lightDisplay(0);
 }
